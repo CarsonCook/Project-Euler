@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1466954082 source:c:\users\owner\desktop\project euler\problem-3-largest-prime-factor\main.cpp
+	<iostream>
+	<vector>
+

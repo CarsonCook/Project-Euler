@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1475215501 source:c:\users\owner\desktop\project euler\problem-13-large-sum\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+

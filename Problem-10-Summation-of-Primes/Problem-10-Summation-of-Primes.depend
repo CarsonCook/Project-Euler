@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1471841142 source:c:\users\owner\desktop\project euler\problem-10-summation-of-primes\main.cpp
+	<iostream>
+	<math.h>
+

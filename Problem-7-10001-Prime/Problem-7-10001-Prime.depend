@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1467578042 source:c:\users\owner\desktop\project euler\problem-7-10001-prime\main.cpp
+	<iostream>
+	<math.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1475218460 source:c:\users\owner\desktop\project euler\problem-14-longest-collatz\main.cpp
+	<iostream>
+	<vector>
+

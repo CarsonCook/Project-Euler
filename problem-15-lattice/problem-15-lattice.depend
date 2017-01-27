@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1481956519 source:c:\users\owner\desktop\project euler\problem-15-lattice\main.cpp
+	<iostream>
+	<math.h>
+
