@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1487013507 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\main.cpp
+	<iostream>
+	<sstream>
+

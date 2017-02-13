@@ -1,44 +1,51 @@
 #include <iostream>
 #include <sstream>
-#include <bitset>
-#include <string>
-
-#define POWER 15
 
 using namespace std;
 
-typedef bitset<POWER> mybitset;
+typedef unsigned long long ulll;
 
-mybitset convert(string s);
-int charToInt(char letter);
+string binConversion(unsigned int num);
+ulll modExp(int base, string bin);
 
 int main()
 {
-    string bin="1";
-    for (int i=0;i<POWER; i++)
-    {
-        bin+="0";
-    }
-    cout << bin << endl;
-    mybitset num=convert(bin);
-    cout << num.to_string() << endl;
-    return 0;
+    cout << modExp(2,binConversion(1000));
 }
 
-mybitset convert(string s)
-{
-    mybitset result;
-    for (int loop = 0; s[loop]; ++loop) {
-        if (s[loop] == '1') result[loop] = true;
-    }
-    return result;
-}
-
-int charToInt(char letter)
+string binConversion(unsigned int num)
 {
     stringstream ss;
-    int inum;
-    ss << letter;
-    ss >> inum;
-    return inum;
+    string binReverse;
+    int rem;
+    do
+    {
+      rem = num%2;
+      num /=2;
+      ss << rem;
+      char one;
+      ss >> one;
+      binReverse +=one;
+    } while (num>0);
+    string out;
+    for (int i = binReverse.length(); i>=0; i--)
+    {
+        out+=binReverse[i];
+    }
+    return out;
+}
+
+ulll modExp(int base, string bin)
+{
+    int x=1;
+    ulll power=base;
+    for (int i=0; i<bin.length(); i++)
+    {
+        if (bin[bin.length()-1-i] == '1')
+        {
+            x=(x*power);
+        }
+        power=(power*power);
+    }
+    return x;
 }
