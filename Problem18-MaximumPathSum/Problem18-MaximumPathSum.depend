@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1487033015 source:c:\users\owner\desktop\github-code\project-euler\problem18-maximumpathsum\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+
