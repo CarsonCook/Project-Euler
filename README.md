@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Dependencies
 
-###### Ensure these permissions and data are in your AndroidManifest.xml
+##### Ensure these permissions and data are in your AndroidManifest.xml
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -27,11 +27,11 @@ These instructions will get you a copy of the project up and running on your loc
             android:name="io.fabric.ApiKey"
             android:value="d84ee4ad5d54b10dede20dd1d87deb32e5214421" />`
 
-###### Ensure these values are in your android{} field in your app.gradle file
+##### Ensure these values are in your android{} field in your app.gradle file
 
-`compileSdkVersion 24`
-`minSdkVersion 21
- targetSdkVersion 24`
+`compileSdkVersion 24
+minSdkVersion 21
+targetSdkVersion 24`
 
 ##### Ensure this is at the top of your app.gradle file
 
@@ -93,6 +93,7 @@ For more information, click [here](https://developer.android.com/studio/run/emul
 ### Physical Phone 
 
 Android phones can be used to debug/test the app using a USB cable. The phone must be set properly to allow this:
+
 1. Go to Settings > About Phone
 2. Tap Build Number 7 times to unlock Developer Options
 3. In Developer Options set phone to allow debugging
@@ -110,7 +111,7 @@ Ensure your dependencies in the app build.gradle file are as described above.
 ### SQLite Database
 
 There is an SQLite database stored on the phone in order to hold user data - if they are logged in and their class schedule. This is secure because the database is held, by default, in memory only accessable by the app. The class schedule is obtained from the user logging into a Solus webview and downloading the ics file, which is then parsed for the information. The data also persists: the database is only deleted and data lost if rows/tables/the database is manually deleted, or the app is uninstalled/app data is deleted.
-???To create the database, SQLite was used, with a class extending SQLiteOpenHelper to manage the database in memory.??????? Each table has it's schema defined by a class, where String fields contain the column names, int fields contain the column number each field is in and an attribute contains the value of each column value. One instance of this class is one row in the table.
+To create the database, SQLite was used, with a class extending SQLiteOpenHelper to manage the database in memory. DatabaseAccessor establsihes a connection to the SQLite database, and ensures that only one instance of it/DbHelper is open at once. Each table has it's schema defined by a class, where String fields contain the column names, int fields contain the column number each field is in and an attribute contains the value of each column value. One instance of this class is one row in the table.
 For each schema class, there is also a manager class that handles queries for that table. This includes insertions, deletions, retrievals and updates. These operations can be done for single rows as well as the full table.
 For every table, a CREATE and DELETE SQL string need to be created in SqlStringStatements, and used in DbHelper. Otherwise, the tables will not be initialized, or be able to be deleted.
 For *ANY* change to the database schema to be reflected in the actual database, DATABASE_VERSION in DbHelper *MUST* be incremented. (Note it can also be decremented, although outside of testing purposes this should not be done). When changing the database version, please note the change in DBVersionLog.txt, in the common/database directory. Give the reason why it was changed - e.g. "BuildingHour column changed to BuildingHours".
