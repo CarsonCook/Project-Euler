@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="d84ee4ad5d54b10dede20dd1d87deb32e5214421" />`
+            android:value="d84ee4ad5d54b10dede20dd1d87deb32e5214421" />
 
 ##### Ensure these values are in your android{} field in your app.gradle file
 
