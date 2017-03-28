@@ -8,8 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Dependencies
 
-*Ensure these permissions and data are in your AndroidManifest.xml*
-	`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+###### Ensure these permissions and data are in your AndroidManifest.xml
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -26,12 +27,14 @@ These instructions will get you a copy of the project up and running on your loc
             android:name="io.fabric.ApiKey"
             android:value="d84ee4ad5d54b10dede20dd1d87deb32e5214421" />`
 
-*Ensure these values are in your android{} field in your app.gradle file*
+###### Ensure these values are in your android{} field in your app.gradle file
+
 `compileSdkVersion 24`
 `minSdkVersion 21
  targetSdkVersion 24`
 
-*Ensure this is at the top of your app.gradle file*
+##### Ensure this is at the top of your app.gradle file
+
 `buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
@@ -48,8 +51,9 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }`
 
-*Ensure these are in your dependencies in app.gradle file*
-	`compile('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
+##### Ensure these are in your dependencies in app.gradle file
+
+`compile('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
         transitive = true;
     }
     compile 'com.android.support:appcompat-v7:24.2.1'
@@ -125,9 +129,9 @@ We use Semantic Versioning for versioning. For the versions available,see [the t
 
 ### Version History
 
-1.0.0 - Initial Work - Acquired and parsed ICS file to show individual's schedule in a crude textbox. Information stored using an SQLite database. Google Maps API used to have a map within the app.
-1.0.1 - Fixed Google Maps location - When Google Maps opened in app, the first area shown is on the Queen's campus and near the ILC.
-1.1.1 - Improved schedule UI/functionality - Created infinite scroll view for student schedule, made spacing for events based on time between them and jump to date in agenda when click on a calendar date.
+* 1.0.0 - Initial Work - Acquired and parsed ICS file to show individual's schedule in a crude textbox. Information stored using an SQLite database. Google Maps API used to have a map within the app.
+* 1.0.1 - Fixed Google Maps location - When Google Maps opened in app, the first area shown is on the Queen's campus and near the ILC.
+* 1.1.1 - Improved schedule UI/functionality - Created infinite scroll view for student schedule, made spacing for events based on time between them and jump to date in agenda when click on a calendar date.
 
 ## Authors
 
