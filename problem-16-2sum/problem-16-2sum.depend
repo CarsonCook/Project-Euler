@@ -1,5 +1,111 @@
 # depslib dependency file v1.0
-1487013507 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\main.cpp
+1492287838 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\main.cpp
 	<iostream>
 	<sstream>
+	"BigIntegerLibrary.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\biginteger.cc
+	"BigInteger.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\biginteger.hh
+	"BigUnsigned.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigunsigned.hh
+	"NumberlikeArray.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\numberlikearray.hh
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigintegeralgorithms.cc
+	"BigIntegerAlgorithms.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigintegeralgorithms.hh
+	"BigInteger.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigintegerutils.cc
+	"BigIntegerUtils.hh"
+	"BigUnsignedInABase.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigintegerutils.hh
+	"BigInteger.hh"
+	<string>
+	<iostream>
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigunsignedinabase.hh
+	"NumberlikeArray.hh"
+	"BigUnsigned.hh"
+	<string>
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigunsigned.cc
+	"BigUnsigned.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigunsignedinabase.cc
+	"BigUnsignedInABase.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\sample.cc
+	<string>
+	<iostream>
+	"BigIntegerLibrary.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\bigintegerlibrary.hh
+	"NumberlikeArray.hh"
+	"BigUnsigned.hh"
+	"BigInteger.hh"
+	"BigIntegerAlgorithms.hh"
+	"BigUnsignedInABase.hh"
+	"BigIntegerUtils.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigint-2010.04.30\testsuite.cc
+	"BigIntegerLibrary.hh"
+	<string>
+	<iostream>
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\biginteger.cc
+	"BigInteger.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\biginteger.hh
+	"BigUnsigned.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigunsigned.hh
+	"NumberlikeArray.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\numberlikearray.hh
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigintegeralgorithms.cc
+	"BigIntegerAlgorithms.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigintegeralgorithms.hh
+	"BigInteger.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigintegerutils.cc
+	"BigIntegerUtils.hh"
+	"BigUnsignedInABase.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigintegerutils.hh
+	"BigInteger.hh"
+	<string>
+	<iostream>
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigunsignedinabase.hh
+	"NumberlikeArray.hh"
+	"BigUnsigned.hh"
+	<string>
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigunsigned.cc
+	"BigUnsigned.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigunsignedinabase.cc
+	"BigUnsignedInABase.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\bigintegerlibrary.hh
+	"NumberlikeArray.hh"
+	"BigUnsigned.hh"
+	"BigInteger.hh"
+	"BigIntegerAlgorithms.hh"
+	"BigUnsignedInABase.hh"
+	"BigIntegerUtils.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\testsuite.cc
+	"BigIntegerLibrary.hh"
+	<string>
+	<iostream>
 
