@@ -17,7 +17,6 @@ int main()
         num*=2;
     }
     string digits=bigIntegerToString(num);
-    cout << digits << endl;
     int sum=0;
     for (int i=0; i<digits.length(); i++)
     {
