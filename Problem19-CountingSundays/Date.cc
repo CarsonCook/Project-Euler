@@ -2,19 +2,39 @@
 #include <string>
 #include <sstream>
 
-Date::Date(int day, int month, int year)
+Date::Date(int day, int month, int year, int dayType)
 {
     setDay(day);
     setMonth(month);
     setYear(year);
+    setDayType(dayType);
+}
+
+std::string Date::dayTypeToString()
+{
+    switch(dayType)
+    {
+    case 1:
+        return "Monday";
+    case 2:
+        return "Tuesday";
+    case 3:
+        return "Wednesday";
+    case 4:
+        return "Thursday";
+    case 5:
+        return "Friday";
+    case 6:
+        return "Saturday";
+    case 7:
+        return "Sunday";
+    }
 }
 
 std::string Date::toString()
 {
     std::string sDate="";
-    sDate+=(numToString(day)+"/");
-    sDate+=(numToString(month)+"/");
-    sDate+=numToString(year);
+    sDate+=(dayTypeToString()+" "+numToString(day)+"/"+numToString(month)+"/"+numToString(year));
     return sDate;
 }
 
@@ -36,6 +56,14 @@ void Date::incrementDate()
     else
     {
         setDay(day+1);
+    }
+    if (dayType==7) //end of week is sunday
+    {
+        setDayType(1);
+    }
+    else
+    {
+        setDayType(dayType+1);
     }
 }
 
@@ -69,6 +97,7 @@ int Date::getDaysInCurrentMonth()
     case 7:
     case 8:
     case 10:
+    case 12:
         return 31;
     }
 }
@@ -86,6 +115,16 @@ std::string Date::numToString(int num)
 /**
 Setters and getters for class variables
 */
+
+void Date::setDayType(int dayType)
+{
+    this->dayType=dayType;
+}
+
+int Date::getDayType()
+{
+    return this->dayType;
+}
 
 void Date::setDay(int day)
 {

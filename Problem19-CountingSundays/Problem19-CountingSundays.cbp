@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Date.cc" />
+		<Unit filename="Date.hh" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
