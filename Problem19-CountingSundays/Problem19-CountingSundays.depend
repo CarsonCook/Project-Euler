@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1492360173 source:c:\users\owner\desktop\github-code\project-euler\problem19-countingsundays\date.c
+	"Date.h"
+
+1492360403 c:\users\owner\desktop\github-code\project-euler\problem19-countingsundays\date.h
+
+1492363145 source:c:\users\owner\desktop\github-code\project-euler\problem19-countingsundays\main.cpp
+	<iostream>
+	"Date.hh"
+
+1492363226 source:c:\users\owner\desktop\github-code\project-euler\problem19-countingsundays\date.cc
+	"Date.hh"
+	<string>
+	<sstream>
+
+1492363225 c:\users\owner\desktop\github-code\project-euler\problem19-countingsundays\date.hh
+	<string>
+
