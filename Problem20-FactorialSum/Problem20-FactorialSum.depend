@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\biginteger.cc
+	"BigInteger.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\biginteger.hh
+	"BigUnsigned.hh"
+
+1492412740 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigunsigned.hh
+	"NumberlikeArray.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\numberlikearray.hh
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigintegeralgorithms.cc
+	"BigIntegerAlgorithms.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigintegeralgorithms.hh
+	"BigInteger.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigintegerutils.cc
+	"BigIntegerUtils.hh"
+	"BigUnsignedInABase.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigintegerutils.hh
+	"BigInteger.hh"
+	<string>
+	<iostream>
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigunsignedinabase.hh
+	"NumberlikeArray.hh"
+	"BigUnsigned.hh"
+	<string>
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigunsigned.cc
+	"BigUnsigned.hh"
+
+1272666872 source:c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigunsignedinabase.cc
+	"BigUnsignedInABase.hh"
+
+1492412814 source:c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"BigIntegerLibrary.hh"
+
+1272666872 c:\users\owner\desktop\github-code\project-euler\problem20-factorialsum\bigintegerlibrary.hh
+	"NumberlikeArray.hh"
+	"BigUnsigned.hh"
+	"BigInteger.hh"
+	"BigIntegerAlgorithms.hh"
+	"BigUnsignedInABase.hh"
+	"BigIntegerUtils.hh"
+

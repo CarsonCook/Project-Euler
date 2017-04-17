@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1492287838 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\main.cpp
+1492288589 source:c:\users\owner\desktop\github-code\project-euler\problem-16-2sum\main.cpp
 	<iostream>
+	<string>
 	<sstream>
 	"BigIntegerLibrary.hh"
 
