@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1492414031 source:c:\users\owner\desktop\github-code\project-euler\problem21-amicablenumbers\main.cpp
+	<iostream>
+	<math.h>
+
