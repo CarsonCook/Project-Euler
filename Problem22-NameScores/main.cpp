@@ -19,9 +19,19 @@ int main()
     FileInput nameFile("names.txt");
     svec names=parseNames(nameFile);
     names=mergesort(names);
+    unsigned long long sum=0;
     for (int i=0; i<names.size(); i++)
     {
-        cout << names[i] << endl;
+        if (names[i]=="COLIN")
+        {
+            cout << i << endl;
+        }
+        int wordScore=0;
+        for (int j=0; j<names[i].length(); j++)
+        {
+            wordScore+=((int)names[i][j]-64);//all names are upper case
+        }
+        sum+=(wordScore*(i+1));
     }
     return 0;
 }
