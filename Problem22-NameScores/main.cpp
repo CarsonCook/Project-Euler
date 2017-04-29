@@ -1,14 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "FileIO.hh"
+#include <fstream>
 
 using namespace std;
 
 typedef vector<string> svec;
 
-svec sortNames(svec names);
-svec parseNames(FileInput file);
 svec merge(svec namesL, svec namesR);
 svec mergesort(svec names);
 svec copyVec(int l, int r, svec vec);
@@ -16,16 +14,18 @@ int compString(string a, string b);
 
 int main()
 {
-    FileInput nameFile("names.txt");
-    svec names=parseNames(nameFile);
+    svec names;
+    ifstream input("names.txt");
+    string tempName;
+    while (getline(input, tempName, ',')){
+        tempName.erase(tempName.begin());
+        tempName.pop_back();
+        names.push_back(tempName);
+    }
     names=mergesort(names);
     unsigned long long sum=0;
     for (int i=0; i<names.size(); i++)
     {
-        if (names[i]=="COLIN")
-        {
-            cout << i << endl;
-        }
         int wordScore=0;
         for (int j=0; j<names[i].length(); j++)
         {
@@ -33,27 +33,8 @@ int main()
         }
         sum+=(wordScore*(i+1));
     }
+    cout << sum << endl;
     return 0;
-}
-
-svec parseNames(FileInput file)
-{
-    string namesString=file.fileToString();
-    svec names;
-    string oneName="";
-    for (int i=0; i<namesString.length(); i++)
-    {
-        if (namesString[i]==',' || i>=namesString.length())
-        {
-            names.push_back(oneName);
-            oneName="";
-        }
-        else if (namesString[i]!='"')
-        {
-            oneName+=namesString[i];
-        }
-    }
-    return names;
 }
 
 svec merge(svec namesL, svec namesR)
@@ -63,7 +44,7 @@ svec merge(svec namesL, svec namesR)
     int rCounter=0;
     while(lCounter<namesL.size() && rCounter<namesR.size())
     {
-        if (compString(namesL[lCounter],namesR[rCounter])>=0)
+        if (namesL[lCounter].compare(namesR[rCounter])<=0)
         {
             names.push_back(namesL[lCounter]);
             lCounter++;
