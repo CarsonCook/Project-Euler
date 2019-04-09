@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/Number.cpp
+Number.h
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/Number.h
+cmath
+-
+algorithm
+-
+cctype
+-
+
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/Number.h
+string
+-
+vector
+-
+iostream
+-
+
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/NumberExceptions.cpp
+Number.h
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/Number.h
+
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/NumberOperators.cpp
+algorithm
+-
+Number.h
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/Number.h
+
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Number.h
+C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/Number.h
+

@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\cookc\Desktop\Code\Project-Euler\Problem-25-1000-Digit-Fib-Num
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/cookc/Desktop/Code/Project-Euler/Problem-25-1000-Digit-Fib-Num/cmake-build-debug
